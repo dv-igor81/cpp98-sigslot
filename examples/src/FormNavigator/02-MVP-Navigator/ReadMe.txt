@@ -36,7 +36,7 @@ Borland C++ Builder 6.0 / C++98
               IView.h   IPresenter.h   INavigator.h
                 |          |              |
                 v          v              v
-          SharedDatah      +--- HomeForm.h
+          SharedData.h      +--- HomeForm.h
                            +--- DataForm.h
                            +--- ResultForm.h
                            +--- HomePresenter.h
@@ -44,9 +44,9 @@ Borland C++ Builder 6.0 / C++98
                            +--- ResultPresenter.h
                            +--- AppNavigator.h
 
-  IView.h ------> signal_impl.h
-  IPresenter.h -> IView.h, INavigator.h, NavigatorTypes.h
-  INavigator.h -> NavigatorTypes.h
+  IView.h ------> signal_impl.h, SharedData.h
+  IPresenter.h -> (автономный)
+  INavigator.h -> SharedData.h
   HomeForm.h ---> IView.h
   DataForm.h ---> IView.h
   ResultForm.h -> IView.h

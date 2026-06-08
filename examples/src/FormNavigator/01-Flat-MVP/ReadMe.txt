@@ -53,7 +53,7 @@ Borland C++ Builder 6.0 / C++98
 -------------
 signal_impl.h/cpp   Ч Ѕиблиотека сигналов/слотов (C++98, реентерабельна€)
 NavigatorTypes.h/cpp Ч ќбщие типы (SharedData)
-IView.h             Ч јбстрактный интерфейс вида + фабрики
+IView.h             Ч јбстрактные интерфейсы видов (IView, IHomeView, IDataView, IResultView)
 IModel.h            Ч јбстрактный интерфейс модели + фабрика
 HomeForm.h/cpp      Ч ‘орма 1: √лавна€ (TForm + IView)
 DataForm.h/cpp      Ч ‘орма 2: –едактор данных (TForm + IView)
